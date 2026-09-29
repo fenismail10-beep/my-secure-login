@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sartre Lab - Connexion Sécurisée</title>
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #161b22;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #58a6ff;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #8b949e;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            color: #c9d1d9;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            border-color: #58a6ff;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #238636;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #2ea44f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Cyber Security Lab</h2>
+        
+      
+        <form id="loginForm">
+            <label>Username or Email</label>
+         
+            <input type="text" id="username" placeholder="Entrez votre nom..." required>
+
+            <label>Password</label>
+        
+            <input type="password" id="password" placeholder="Entrez votre mot de passe..." required>
+
+            <button type="submit">Connexion</button>
+        </form>
+    </div>
+
+   
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // 
+
+            
+            const user = document.getElementById('username').value;
+            const pass = document.getElementById('password').value;
+
+     
+            alert("🚨 [ATTENTION - LAB SECURITY] 🚨\n\nDonnées capturées en texte clair :\n👤 Username : " + user + "\n🔑 Password : " + pass);
+        });
+    </script>
+
+</body>
+</html>
