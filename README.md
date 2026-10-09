@@ -57,4 +57,4 @@ To shield the infrastructure from the automated scanner threats discovered durin
 
 ## 🏆 Portfolio Links
 All live metrics, screenshots, and technical details are documented inside my official web portfolio:
-👉 **[Check My Cyber Labs Page]([https://google.com](https://sites.google.com/view/ismailfendou-cybersec/my-cyber-labs))**
+👉 **[Check My Cyber Labs Page]((https://sites.google.com/view/ismailfendou-cybersec/my-cyber-labs))**
